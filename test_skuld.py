@@ -9878,10 +9878,15 @@ t_ignore = ' \t'
 
 
 def t_error(t):
-    print(f"Illegal character '{t.value[0]}'")
-    t.lexer.skip(1)
+    match = re.match(r'\S+', t.value)
+    if match:
+        word = match.group(0)
+        print(f"Unrecognized word: {word}")
+        t.lexer.skip(len(word))
+    else:
+        t.lexer.skip(1)
 
-lexer = lex.lex()
+lexer = lex.lex(reflags=re.IGNORECASE)
 
 
 
@@ -15968,13 +15973,23 @@ def p_aya(p):
 
 
     matched_words = " ".join(p[1:])
-    print(f"Matched Ayat: {matched_words}")
+    print(f"Matched Aya: {matched_words}")
 
 def p_error(p):
-    print("Syntax error in input!")
+    if p:
+        print(f"Syntax error at '{p.value}'")
+    else:
+        print("Syntax error at end of input")
 
 parser = yacc.yacc()
 
-data = input("Enter Quranic phrase : ")
+data = input("Enter Quranic phrase: ").strip()
 
+print("\nTokens:")
+lexer.input(data)
+for token in lexer:
+    print(token)
+
+lexer.input(data)
 parser.parse(data)
+
