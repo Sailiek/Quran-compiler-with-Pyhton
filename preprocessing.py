@@ -9,7 +9,7 @@ model = SentenceTransformer('multi-qa-mpnet-base-dot-v1')
 
 
 
-with open('data.json', 'r', encoding='utf-8') as file:
+with open('quran_ar_eng.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 verses = []
 

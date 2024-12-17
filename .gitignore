@@ -1,2 +1,4 @@
 data/verse_embeddings.npy
 model/*
+venv
+*.jpg
