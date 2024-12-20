@@ -1,0 +1,1298 @@
+
+20/12/2024 11:38:10 - starting app
+
+20/12/2024 11:39:12 - starting app
+
+20/12/2024 11:40:10 - starting app
+
+20/12/2024 11:41:30 - starting app
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+20/12/2024 11:50:30 - starting app
+
+20/12/2024 11:52:03 - starting app
+
+20/12/2024 11:55:07 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 12:04:07 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 12:18:55 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 12:21:47 - starting app
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+20/12/2024 12:24:06 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 14:52:01 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 14:54:21 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 14:55:29 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 14:56:30 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 14:58:32 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 15:02:48 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 15:05:41 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 17:40:02 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 17:41:10 - starting app
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+20/12/2024 17:52:10 - starting app
+
+Syntax error: Unexpected pronoun_15(i) on line 1
+
+20/12/2024 17:53:20 - starting app
+
+Syntax error: Unexpected alphabet_5(ha) on line 1
+
+20/12/2024 17:56:31 - starting app
+
+20/12/2024 17:59:05 - starting app
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:02:20 - starting app
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:19:07 - starting app
+
+20/12/2024 18:22:50 - starting app
+
+20/12/2024 18:23:27 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:23:27 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:23:50 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:23:50 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:23:53 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:23:53 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:24:15 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:24:15 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:24:22 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:24:22 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:24:26 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:24:26 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:25:27 - starting app
+
+20/12/2024 18:26:05 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:26:05 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:35:51 - starting app
+
+20/12/2024 18:36:17 - Starting app
+
+20/12/2024 18:36:29 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:36:29 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:42:55 - starting app
+
+20/12/2024 18:43:20 - Starting app
+
+20/12/2024 18:43:52 - starting app
+
+20/12/2024 18:44:18 - Starting app
+
+20/12/2024 18:44:40 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:44:40 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:45:02 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:45:02 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:48:45 - starting app
+
+20/12/2024 18:49:12 - Starting app
+
+20/12/2024 18:49:28 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:49:28 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:49:31 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:49:31 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:49:50 - starting app
+
+20/12/2024 18:49:52 - Starting app
+
+20/12/2024 18:49:52 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|0     |0    |NEG     |لَا      
+|0     |4    |VERB    |أُقْسِمُ 
+|0     |13   |PREP    |بِ       
+|0     |15   |DEM     |هَذَا    
+|0     |21   |DEF_N   |الْبَلَدِ
+|0     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 18:49:52 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 18:52:37 - starting app
+
+20/12/2024 18:53:02 - Starting app
+
+20/12/2024 18:53:14 - Starting app
+
+20/12/2024 18:53:14 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:53:15 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:53:49 - starting app
+
+20/12/2024 18:54:16 - Starting app
+
+20/12/2024 18:54:25 - Starting app
+
+20/12/2024 18:54:25 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:54:25 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:55:45 - starting app
+
+20/12/2024 18:56:11 - Starting app
+
+20/12/2024 18:56:32 - Starting app
+
+20/12/2024 18:56:32 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 18:56:33 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 18:56:41 - starting app
+
+20/12/2024 18:56:43 - Starting app
+
+20/12/2024 18:56:43 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|0     |0    |NEG     |لَا      
+|0     |4    |VERB    |أُقْسِمُ 
+|0     |13   |PREP    |بِ       
+|0     |15   |DEM     |هَذَا    
+|0     |21   |DEF_N   |الْبَلَدِ
+|0     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 18:56:43 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 19:00:22 - starting app
+
+20/12/2024 19:00:47 - Starting app
+
+20/12/2024 19:00:57 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:00:58 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:02:17 - starting app
+
+20/12/2024 19:02:41 - Starting app
+
+20/12/2024 19:02:50 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:02:50 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:04:36 - starting app
+
+20/12/2024 19:05:00 - Starting app
+
+20/12/2024 19:05:25 - Starting app
+
+20/12/2024 19:05:25 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:05:25 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:06:54 - starting app
+
+20/12/2024 19:07:14 - Starting app
+
+20/12/2024 19:07:28 - Starting app
+
+20/12/2024 19:07:28 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:07:28 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:07:56 - starting app
+
+20/12/2024 19:08:58 - starting app
+
+20/12/2024 19:09:20 - Starting app
+
+20/12/2024 19:09:27 - Starting app
+
+20/12/2024 19:09:27 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:09:27 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:15:46 - starting app
+
+20/12/2024 19:16:07 - Starting app
+
+20/12/2024 19:16:15 - Starting app
+
+20/12/2024 19:16:15 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:16:15 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:18:12 - starting app
+
+20/12/2024 19:18:33 - Starting app
+
+20/12/2024 19:18:51 - Starting app
+
+20/12/2024 19:18:51 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:18:51 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:18:54 - Starting app
+
+20/12/2024 19:18:54 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:18:54 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:18:55 - Starting app
+
+20/12/2024 19:18:55 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:18:55 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:20:12 - starting app
+
+20/12/2024 19:20:33 - Starting app
+
+20/12/2024 19:20:50 - Starting app
+
+20/12/2024 19:20:50 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:20:51 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:21:13 - starting app
+
+20/12/2024 19:21:35 - Starting app
+
+20/12/2024 19:21:43 - Starting app
+
+20/12/2024 19:21:43 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:21:43 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:21:55 - Starting app
+
+20/12/2024 19:21:55 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:21:55 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:21:56 - Starting app
+
+20/12/2024 19:21:56 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:21:56 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:24:43 - starting app
+
+20/12/2024 19:25:06 - Starting app
+
+20/12/2024 19:25:26 - Starting app
+
+20/12/2024 19:25:26 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:25:27 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:25:41 - starting app
+
+20/12/2024 19:26:01 - Starting app
+
+20/12/2024 19:26:06 - Starting app
+
+20/12/2024 19:26:06 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:26:07 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:27:20 - starting app
+
+20/12/2024 19:27:40 - Starting app
+
+20/12/2024 19:29:12 - starting app
+
+20/12/2024 19:29:32 - Starting app
+
+20/12/2024 19:29:41 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:29:41 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:30:05 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:30:05 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:30:17 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:30:17 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:32:32 - starting app
+
+20/12/2024 19:32:36 - starting app
+
+20/12/2024 19:32:36 - Starting app
+
+20/12/2024 19:32:36 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|0     |0    |NEG     |لَا      
+|0     |4    |VERB    |أُقْسِمُ 
+|0     |13   |PREP    |بِ       
+|0     |15   |DEM     |هَذَا    
+|0     |21   |DEF_N   |الْبَلَدِ
+|0     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 19:32:36 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 19:34:41 - starting app
+
+20/12/2024 19:34:41 - Starting app
+
+20/12/2024 19:34:41 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|0     |0    |NEG     |لَا      
+|0     |4    |VERB    |أُقْسِمُ 
+|0     |13   |PREP    |بِ       
+|0     |15   |DEM     |هَذَا    
+|0     |21   |DEF_N   |الْبَلَدِ
+|0     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 19:34:41 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 19:34:43 - starting app
+
+20/12/2024 19:35:02 - Starting app
+
+20/12/2024 19:35:08 - Starting app
+
+20/12/2024 19:35:08 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:35:08 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:35:10 - Starting app
+
+20/12/2024 19:35:10 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:35:10 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:35:15 - Starting app
+
+20/12/2024 19:35:15 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:35:15 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:35:16 - Starting app
+
+20/12/2024 19:35:16 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:35:16 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:39:14 - starting app
+
+20/12/2024 19:39:34 - Starting app
+
+20/12/2024 19:39:48 - Starting app
+
+20/12/2024 19:39:48 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:39:48 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:39:50 - Starting app
+
+20/12/2024 19:39:50 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+
+20/12/2024 19:39:50 - Starting syntactic and semantic analysis...
+
+Syntax error: Unexpected end of file
+
+20/12/2024 19:41:57 - starting app
+
+20/12/2024 19:41:58 - Starting app
+
+20/12/2024 19:41:58 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|0     |0    |NEG     |لَا      
+|0     |4    |VERB    |أُقْسِمُ 
+|0     |13   |PREP    |بِ       
+|0     |15   |DEM     |هَذَا    
+|0     |21   |DEF_N   |الْبَلَدِ
+|0     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 19:41:58 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 21:09:27 - starting app
+
+20/12/2024 21:10:05 - Starting app
+
+20/12/2024 21:10:19 - Starting app
+
+20/12/2024 21:10:28 - Starting app
+
+20/12/2024 21:16:23 - Starting app
+
+20/12/2024 21:19:18 - starting app
+
+20/12/2024 21:19:52 - Starting app
+
+20/12/2024 21:20:07 - Starting app
+
+20/12/2024 21:20:07 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 21:20:07 - Starting syntactic and semantic analysis...
+
+20/12/2024 21:23:41 - starting app
+
+20/12/2024 21:24:13 - Starting app
+
+20/12/2024 21:24:25 - Starting app
+
+20/12/2024 21:24:25 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 21:24:25 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 21:26:31 - Starting app
+
+20/12/2024 21:26:31 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 21:26:31 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 21:58:03 - starting app
+
+20/12/2024 21:58:35 - Starting app
+
+20/12/2024 21:58:44 - Starting app
+
+20/12/2024 21:58:44 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+20/12/2024 21:58:44 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+20/12/2024 22:00:03 - starting app
+
+20/12/2024 22:00:39 - Starting app
+
+20/12/2024 22:00:52 - Starting app
+
+20/12/2024 22:00:52 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:00:52 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:01:00 - Starting app
+
+20/12/2024 22:01:00 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+Illegal token 'لْبَلَدِ' at line 1 col 23 !
+Did you mean: الْبَلَدِ?
+|1     |32   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:01:00 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Illegal token 'لْبَلَدِ' at line 1 col 23 !
+Did you mean: الْبَلَدِ?
+Preposition phrase -> بِ هَذَا
+
+Syntax error: Unexpected DIVIDER(2) on line 1
+
+20/12/2024 22:04:15 - starting app
+
+20/12/2024 22:04:41 - Starting app
+
+20/12/2024 22:05:03 - Starting app
+
+20/12/2024 22:05:03 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:05:03 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:05:14 - Starting app
+
+20/12/2024 22:05:14 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+Illegal token 'الْبَدِ' at line 1 col 23 !
+Did you mean: الْبَلَدِ?
+|1     |31   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:05:14 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Illegal token 'الْبَدِ' at line 1 col 23 !
+Did you mean: الْبَلَدِ?
+Preposition phrase -> بِ هَذَا
+
+Syntax error: Unexpected DIVIDER(2) on line 1
+
+20/12/2024 22:07:12 - starting app
+
+20/12/2024 22:07:38 - Starting app
+
+20/12/2024 22:08:07 - starting app
+
+20/12/2024 22:08:32 - Starting app
+
+20/12/2024 22:08:54 - starting app
+
+20/12/2024 22:09:20 - Starting app
+
+20/12/2024 22:09:29 - Starting app
+
+20/12/2024 22:09:29 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:09:29 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:11:23 - starting app
+
+20/12/2024 22:11:48 - Starting app
+
+20/12/2024 22:11:58 - Starting app
+
+20/12/2024 22:11:58 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:11:58 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:12:06 - Starting app
+
+20/12/2024 22:12:06 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+20/12/2024 22:12:06 - Starting syntactic and semantic analysis...
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+Syntax error: Unexpected end of file
+
+20/12/2024 22:12:30 - starting app
+
+20/12/2024 22:13:03 - Starting app
+
+20/12/2024 22:13:35 - Starting app
+
+20/12/2024 22:13:35 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:13:35 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:14:18 - starting app
+
+20/12/2024 22:14:49 - Starting app
+
+20/12/2024 22:15:01 - Starting app
+
+20/12/2024 22:15:01 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:15:01 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:15:08 - Starting app
+
+20/12/2024 22:15:08 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+20/12/2024 22:15:08 - Starting syntactic and semantic analysis...
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+Syntax error: Unexpected end of file
+
+20/12/2024 22:15:42 - starting app
+
+20/12/2024 22:16:06 - Starting app
+
+20/12/2024 22:16:36 - Starting app
+
+20/12/2024 22:16:36 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:16:36 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:16:47 - Starting app
+
+20/12/2024 22:16:47 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+20/12/2024 22:16:47 - Starting syntactic and semantic analysis...
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+Syntax error: Unexpected end of file
+
+20/12/2024 22:18:26 - starting app
+
+20/12/2024 22:18:58 - Starting app
+
+20/12/2024 22:19:24 - starting app
+
+20/12/2024 22:19:53 - Starting app
+
+20/12/2024 22:20:44 - starting app
+
+20/12/2024 22:21:17 - Starting app
+
+20/12/2024 22:21:35 - Starting app
+
+20/12/2024 22:21:35 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+20/12/2024 22:21:35 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2

@@ -170,7 +170,7 @@ class QuranWidgetBase(QWidget):
         scaled_pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         self.background_label.setPixmap(scaled_pixmap)
 
-    def format_verse_display(self, chapter, verse, include_tafsir=False,api_results=None):
+    def format_verse_display(self, chapter, verse, include_tafsir=False,api_results=None,vf=None):
         """Format verse display with HTML"""
         formatted_text = f"""
         <div style='margin: 10px;'>
@@ -183,6 +183,7 @@ class QuranWidgetBase(QWidget):
             <hr>
             <p><b>Arabic Text:</b><br>{verse['text']}</p>
             <p><b>Translation:</b><br>{verse['translation']}</p>
+            <p><b>Traduction:</b><br>{vf}</p>
         """
         if include_tafsir:
             formatted_text += f"""
