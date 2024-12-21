@@ -21,18 +21,87 @@ class SearchWidget(QuranWidgetBase):
         super().__init__()
         logevent('Starting app\n')
 
+        # Common styles
+        input_style = """
+            QLineEdit {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: white;
+                font-size: 14px;
+            }
+            QLineEdit:hover, QLineEdit:focus {
+                border-color: #007bff;
+            }
+        """
+        
+        combo_style = """
+            QComboBox {
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+                min-width: 150px;
+            }
+            QComboBox:hover {
+                border-color: #007bff;
+            }
+            QComboBox::drop-down {
+                border: none;
+            }
+            QComboBox::down-arrow {
+                image: none;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #666;
+                margin-right: 5px;
+            }
+            QComboBox:on {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: white;
+                selection-background-color: #007bff;
+            }
+        """
+        
+        button_style = """
+            QPushButton {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+            }
+            QPushButton:hover {
+                background-color: #e2e2e2;
+                color: black;
+                border-color: #cccccc;
+            }
+            QPushButton:disabled {
+                background-color: #e9ecef;
+                color: #6c757d;
+                border-color: #dee2e6;
+            }
+        """
+
         # Input field for entering the verse
         self.input_field = QLineEdit()
         self.input_field.setPlaceholderText("Enter Quran verse")
+        self.input_field.setStyleSheet(input_style)
 
         # Dropdown for language selection (English or Arabic)
         self.language_selector = QComboBox()
         self.language_selector.addItem("English")
         self.language_selector.addItem("Arabic")
+        self.language_selector.setStyleSheet(combo_style)
 
         # Button to check the verse
         self.check_button = QPushButton("Check Verse")
         self.check_button.clicked.connect(self.check_verse)
+        self.check_button.setStyleSheet(button_style)
 
         # Add widgets to the main layout
         self.layout.insertWidget(0, self.input_field)
@@ -97,17 +166,27 @@ class SearchWidget(QuranWidgetBase):
             # Find the verse based on the selected language
             if selected_language == "English":
                 try:
-                    skuld_output, errors = skuld(entered_verse)  
-                    formatted_text = self.format_verse_display(
-                        chapter=self.current_chapter,
-                        verse=self.current_verse,
-                        include_tafsir=True,
-                        api_results=None,
-                        vf=None,
-                        skuld_output=skuld_output  
-                    )
-                    self.result_label.setText(formatted_text)
+                    # Get skuld analysis first
+                    skuld_output, errors = skuld(entered_verse)
                     
+                    # Initialize result text
+                    result_text = ""
+                    
+                    # Add skuld errors if any
+                    if errors:
+                        result_text += "Compiler Errors:\n"
+                        for error in errors:
+                            result_text += f"{error}\n"
+                        result_text += "\n"
+                    
+                    # Add skuld output
+                    if skuld_output:
+                        result_text += f"Skuld Analysis:\n{skuld_output}\n\n"
+                    
+                    # Display initial results
+                    self.result_label.setText(result_text)
+                    
+                    # Find and append similar verses
                     self.find_similar_verses(entered_verse)
                         
                     
@@ -193,7 +272,11 @@ class SearchWidget(QuranWidgetBase):
 
     def display_matches(self, results: Dict):
         """Display the matching verses found"""
-        matches_text = "Similar verses found:\n\n"
+        # Get existing text
+        existing_text = self.result_label.text()
+        
+        # Add matches
+        matches_text = existing_text + "\nSimilar verses found:\n\n"
         for match in results['matches']:
             matches_text += (
                 f"Surah: {match['surah_name']} (No. {match['surah_number']})\n"
@@ -202,6 +285,7 @@ class SearchWidget(QuranWidgetBase):
                 f"Text: {match['verse_text']}\n\n"
             )
         
+        # Update text with both skuld output and matches
         self.result_label.setText(matches_text)
         self.play_button.setEnabled(True)
 

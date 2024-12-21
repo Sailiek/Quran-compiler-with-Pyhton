@@ -61,6 +61,29 @@ class QuranWidgetBase(QWidget):
         self.next_button.clicked.connect(self.show_next_verse)
         self.prev_button.setEnabled(False)
         self.next_button.setEnabled(False)
+        
+        # Add hover styling to navigation buttons
+        button_style = """
+            QPushButton {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+            }
+            QPushButton:hover {
+                background-color: #e2e2e2;
+                color: black;
+                border-color: #cccccc;
+            }
+            QPushButton:disabled {
+                background-color: #e9ecef;
+                color: #6c757d;
+                border-color: #dee2e6;
+            }
+        """
+        self.prev_button.setStyleSheet(button_style)
+        self.next_button.setStyleSheet(button_style)
+        
         self.nav_layout.addWidget(self.prev_button)
         self.nav_layout.addWidget(self.next_button)
         
@@ -69,6 +92,38 @@ class QuranWidgetBase(QWidget):
         
         # Reciter selection combo box
         self.reciter_combo = QComboBox()
+        self.reciter_combo.setStyleSheet("""
+            QComboBox {
+                padding: 5px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+                min-width: 200px;
+            }
+            QComboBox:hover {
+                border-color: #cccccc;
+            }
+            QComboBox::drop-down {
+                border: none;
+            }
+            QComboBox::down-arrow {
+                image: none;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #666;
+                margin-right: 5px;
+            }
+            QComboBox:on {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            QComboBox QAbstractItemView {
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: white;
+                selection-background-color: #e2e2e2;
+            }
+        """)
         for reciter in self.reciters:
             self.reciter_combo.addItem(reciter["name"])
         self.reciter_combo.currentIndexChanged.connect(self.on_reciter_changed)
@@ -77,10 +132,12 @@ class QuranWidgetBase(QWidget):
         self.play_button = QPushButton("Play Recitation")
         self.play_button.setEnabled(False)
         self.play_button.clicked.connect(self.play_recitation)
+        self.play_button.setStyleSheet(button_style)
         
         # Control button
         self.control_button = QPushButton("Stop")
         self.control_button.clicked.connect(self.toggle_playback)
+        self.control_button.setStyleSheet(button_style)
         self.control_button.hide()
         
         self.audio_layout.addWidget(self.reciter_combo)
@@ -167,8 +224,24 @@ class QuranWidgetBase(QWidget):
         """Update the reciter's image"""
         current_reciter = self.reciters[self.reciter_combo.currentIndex()]
         pixmap = QPixmap(current_reciter["picture"])
+        if pixmap.isNull():
+            pixmap = QPixmap("image.jpg")  # Fallback to another image if icon.jpg not found
+            
         scaled_pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         self.background_label.setPixmap(scaled_pixmap)
+        self.background_label.setStyleSheet("""
+            QLabel {
+                background-color: white;
+                border: 2px solid #ccc;
+                border-radius: 5px;
+                padding: 5px;
+                margin: 10px;
+            }
+            QLabel:hover {
+                border-color: #cccccc;
+                box-shadow: 0 0 5px rgba(204,204,204,0.5);
+            }
+        """)
 
     def format_verse_display(self, chapter, verse, include_tafsir=False, api_results=None, vf=None, skuld_output=None, similar_verses=None):
         """Format verse display with HTML"""

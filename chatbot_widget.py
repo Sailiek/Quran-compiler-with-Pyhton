@@ -15,9 +15,30 @@ class ChatbotWidget(QWidget):
         self.input_field = QLineEdit(self)
         self.input_field.setPlaceholderText("Ask about a Quranic verse...")
 
+        # Define button style
+        button_style = """
+            QPushButton {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+            }
+            QPushButton:hover {
+                background-color: #e2e2e2;
+                color: black;
+                border-color: #cccccc;
+            }
+            QPushButton:disabled {
+                background-color: #e9ecef;
+                color: #6c757d;
+                border-color: #dee2e6;
+            }
+        """
+        
         # Button to send the query to the model
         self.ask_button = QPushButton("Ask", self)
         self.ask_button.clicked.connect(self.ask_model)
+        self.ask_button.setStyleSheet(button_style)
 
         # Label to display the response from the model
         self.response_label = QLabel(self)

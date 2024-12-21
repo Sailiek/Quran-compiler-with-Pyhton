@@ -80,13 +80,35 @@ class QuranReaderWidget(QuranWidgetBase):
         # Buttons layout
         buttons_layout = QHBoxLayout()
         
+        # Button style
+        button_style = """
+            QPushButton {
+                padding: 5px 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #f8f9fa;
+            }
+            QPushButton:hover {
+                background-color: #e2e2e2;
+                color: black;
+                border-color: #cccccc;
+            }
+            QPushButton:disabled {
+                background-color: #e9ecef;
+                color: #6c757d;
+                border-color: #dee2e6;
+            }
+        """
+        
         # Search button
         self.search_button = QPushButton("Search")
         self.search_button.clicked.connect(self.search_verse)
+        self.search_button.setStyleSheet(button_style)
         
         # Clear button
         self.clear_button = QPushButton("Clear")
         self.clear_button.clicked.connect(self.clear_inputs)
+        self.clear_button.setStyleSheet(button_style)
         
         buttons_layout.addWidget(self.search_button)
         buttons_layout.addWidget(self.clear_button)
