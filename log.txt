@@ -1464,3 +1464,62 @@ Illegal token 'Merciful' at line 1 col 58 !
 21/12/2024 01:55:13 - starting app
 
 21/12/2024 01:55:58 - Starting app
+
+21/12/2024 02:17:52 - starting app
+
+21/12/2024 02:19:33 - starting app
+
+21/12/2024 02:20:21 - starting app
+
+21/12/2024 02:20:55 - Starting app
+
+21/12/2024 02:21:18 - Starting app
+
+21/12/2024 02:21:18 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+21/12/2024 02:21:18 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+21/12/2024 02:23:00 - starting app
+
+21/12/2024 02:23:37 - Starting app
+
+21/12/2024 02:24:19 - starting app
+
+21/12/2024 02:24:50 - Starting app
+
+21/12/2024 02:27:05 - starting app
+
+21/12/2024 02:27:44 - Starting app

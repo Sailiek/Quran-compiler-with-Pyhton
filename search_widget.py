@@ -1,6 +1,7 @@
 from PyQt5.QtWidgets import QVBoxLayout, QLineEdit, QPushButton, QLabel, QMessageBox, QComboBox
 from PyQt5.QtCore import Qt
 from quran_widgets_common import QuranWidgetBase
+from verseSugge import QuranVerseMatcher
 import requests
 from engine import lexical, syntax_lines
 import settings
@@ -50,16 +51,55 @@ class SearchWidget(QuranWidgetBase):
         settings.syn_state = {"output": ""}
 
 
-    def show_error(self, message):
+        
+    def reset_states(self):
+        settings.lex_state = {"output": ""}
+        settings.syn_state = {"output": ""}
+
+
+    def setup_layouts(self):
+        """Set up the widget layouts"""
+        # Create main layout if it doesn't exist
+        if not hasattr(self, 'layout'):
+            self.layout = QVBoxLayout()
+            self.setLayout(self.layout)
+
+        # Add widgets to the main layout
+        self.layout.insertWidget(0, self.input_field)
+        self.layout.insertWidget(1, self.check_button)
+        
+        # Add existing layouts if they exist
+        if hasattr(self, 'nav_layout'):
+            self.layout.addLayout(self.nav_layout)
+        if hasattr(self, 'audio_layout'):
+            self.layout.addLayout(self.audio_layout)
+        if hasattr(self, 'scroll_area'):
+            self.layout.addWidget(self.scroll_area)
+        if hasattr(self, 'background_label'):
+            self.layout.addWidget(self.background_label, 0, Qt.AlignCenter)
+
+    def setup_connections(self):
+        """Set up signal/slot connections"""
+        self.check_button.clicked.connect(self.check_verse)
+        self.input_field.textChanged.connect(self.on_input_changed)
+
+    def on_input_changed(self, text: str):
+        """Enable/disable check button based on input"""
+        self.check_button.setEnabled(bool(text.strip()))
+
+    def show_error(self, message: str, title: str = "Error"):
         """Display error message using QMessageBox"""
-        QMessageBox.warning(self, "Error", message)
+        # self.logger.error(message)
+        QMessageBox.warning(self, title, message)
 
     def check_verse(self):
+        """Check the entered verse against the Quran database"""
         entered_verse = self.input_field.text().strip()
         selected_language = self.language_selector.currentText()
         self.result_label.clear()
         self.reset_states()
         if not self.load_quran_data():
+            self.show_error("Failed to load Quran data")
             return
 
         try:
@@ -127,29 +167,44 @@ class SearchWidget(QuranWidgetBase):
             # For example:
             # self.result_label.setText(f"{lexical_output}\n\n{syntactic_output}\n\n{semantic_output}\n\n-- Arabic Analysis --")
 
+    def display_matches(self, results):
+        """Display the matching verses found"""
+        matches_text = "Similar verses found:\n\n"
+        for match in results['matches']:
+            matches_text += (
+                f"Surah: {match['surah_name']} (No. {match['surah_number']})\n"
+                f"Verse {match['verse_number']}\n"
+                f"Similarity: {match['similarity_score']:.2f}\n"
+                f"Text: {match['verse_text']}\n\n"
+            )
+        
+        self.result_label.setText(matches_text)
+        self.play_button.setEnabled(True)
+
+    def fetch_api_results(self, query: str):
+        """Fetch results from the API"""
+        try:
+            response = requests.post(
+                "http://127.0.0.1:5000/analyze_verse",
+                json={"query": query},
+                timeout=5  # Add timeout
+            )
+            response.raise_for_status()
+            return response.json().get("results", [])
+        except requests.exceptions.RequestException as e:
+            # self.logger.error(f"API request failed: {e}")
+            self.show_error(f"Failed to connect to the API: {str(e)}")
+            return []
+
     def display_verse(self):
-        """Display the current verse along with API results."""
+        """Display the current verse along with API results"""
         if not self.current_chapter or not self.current_verse:
             return
 
-        # Prepare data for API request
-        query = self.current_verse['translation']
-        api_results = []
+        # Fetch API results
+        api_results = self.fetch_api_results(self.current_verse['translation'])
 
-        try:
-            # Call the API with the current verse translation
-            response = requests.post(
-                "http://127.0.0.1:5000/analyze_verse",  # Update with actual API URL if needed
-                json={"query": query},
-            )
-            if response.status_code == 200:
-                api_results = response.json().get("results", [])
-            else:
-                self.show_error(f"API Error: {response.status_code}")
-        except requests.exceptions.RequestException as e:
-            self.show_error(f"Failed to connect to the API: {e}")
-
-        # Format and display the verse along with API results
+        # Format and display the verse
         formatted_text = self.format_verse_display(
             self.current_chapter, 
             self.current_verse, 
@@ -185,52 +240,78 @@ class SearchWidget(QuranWidgetBase):
 
         # Enable audio controls
         self.play_button.setEnabled(True)
-
+        
         # Update navigation buttons
-        is_first_verse_overall = self.current_chapter["id"] == 1 and self.current_verse["id"] == 1
-        is_last_verse_overall = (
-            self.current_chapter["id"] == len(self.quran_data) and 
-            self.current_verse["id"] == self.current_chapter["total_verses"]
-        )
-        self.prev_button.setEnabled(not is_first_verse_overall)
-        self.next_button.setEnabled(not is_last_verse_overall)
+        is_first_verse = self.is_first_verse()
+        is_last_verse = self.is_last_verse()
+        
+        self.prev_button.setEnabled(not is_first_verse)
+        self.next_button.setEnabled(not is_last_verse)
+
+    def is_first_verse(self) -> bool:
+        """Check if current verse is the first verse overall"""
+        return (self.current_chapter["id"] == 1 and 
+                self.current_verse["id"] == 1)
+
+    def is_last_verse(self) -> bool:
+        """Check if current verse is the last verse overall"""
+        return (self.current_chapter["id"] == len(self.quran_data) and 
+                self.current_verse["id"] == self.current_chapter["total_verses"])
 
     def show_previous_verse(self):
+        """Navigate to the previous verse"""
         if not self.current_chapter or not self.current_verse:
             return
 
-        if self.current_verse["id"] > 1:
-            # Previous verse in same chapter
-            self.current_verse = self.current_chapter["verses"][self.current_verse["id"] - 2]
-            self.display_verse()
-        else:
-            # Last verse of previous chapter
-            if self.current_chapter["id"] > 1:
-                for chapter in self.quran_data:
-                    if chapter["id"] == self.current_chapter["id"] - 1:
-                        self.current_chapter = chapter
-                        self.current_verse = chapter["verses"][-1]
-                        self.display_verse()
-                        return
+        try:
+            if self.current_verse["id"] > 1:
+                # Previous verse in same chapter
+                self.current_verse = self.current_chapter["verses"][self.current_verse["id"] - 2]
+            elif self.current_chapter["id"] > 1:
+                # Last verse of previous chapter
+                prev_chapter = next(
+                    (chapter for chapter in self.quran_data 
+                     if chapter["id"] == self.current_chapter["id"] - 1),
+                    None
+                )
+                if prev_chapter:
+                    self.current_chapter = prev_chapter
+                    self.current_verse = prev_chapter["verses"][-1]
             else:
                 QMessageBox.information(self, "Navigation", "This is the first verse in the Quran")
+                return
+
+            self.display_verse()
+            
+        except Exception as e:
+            self.logger.exception("Error navigating to previous verse")
+            self.show_error(f"Navigation error: {str(e)}")
 
     def show_next_verse(self):
+        """Navigate to the next verse"""
         if not self.current_chapter or not self.current_verse:
             return
 
-        if self.current_verse["id"] < self.current_chapter["total_verses"]:
-            # Next verse in same chapter
-            self.current_verse = self.current_chapter["verses"][self.current_verse["id"]]
-            self.display_verse()
-        else:
-            # First verse of next chapter
-            if self.current_chapter["id"] < len(self.quran_data):
-                for chapter in self.quran_data:
-                    if chapter["id"] == self.current_chapter["id"] + 1:
-                        self.current_chapter = chapter
-                        self.current_verse = chapter["verses"][0]
-                        self.display_verse()
-                        return
+        try:
+            if self.current_verse["id"] < self.current_chapter["total_verses"]:
+                # Next verse in same chapter
+                self.current_verse = self.current_chapter["verses"][self.current_verse["id"]]
+            elif self.current_chapter["id"] < len(self.quran_data):
+                # First verse of next chapter
+                next_chapter = next(
+                    (chapter for chapter in self.quran_data 
+                     if chapter["id"] == self.current_chapter["id"] + 1),
+                    None
+                )
+                if next_chapter:
+                    self.current_chapter = next_chapter
+                    self.current_verse = next_chapter["verses"][0]
             else:
                 QMessageBox.information(self, "Navigation", "This is the last verse in the Quran")
+                return
+
+            self.display_verse()
+            
+        except Exception as e:
+            self.logger.exception("Error navigating to next verse")
+            self.show_error(f"Navigation error: {str(e)}")
