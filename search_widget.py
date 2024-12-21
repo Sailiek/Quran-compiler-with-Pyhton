@@ -9,6 +9,7 @@ from maining import analyzeee
 import settings
 from interface import analyze_input
 from logger import logevent
+from test_skuld import skuld
 
 
 
@@ -64,6 +65,11 @@ class SearchWidget(QuranWidgetBase):
         try:
             # Find the verse based on the selected language
             if selected_language == "English":
+                skuld_output, errors = skuld(entered_verse)
+                if errors:
+                # If there are errors, display them in the terminal
+                    print('\n'.join(errors))
+                    
                 for chapter in self.quran_data:
                     for verse in chapter["verses"]:                        
                             # Match the English translation
@@ -72,9 +78,10 @@ class SearchWidget(QuranWidgetBase):
                             self.current_chapter = chapter
                             self.current_verse = verse
                             self.display_verse()
+                            
                             return
                         else:
-                            self.result_label.setText("Verse not found.")
+                            # self.result_label.setText("Verse not found.")
                             self.play_button.setEnabled(False)
                             self.prev_button.setEnabled(False)
                             self.next_button.setEnabled(False)
@@ -152,6 +159,24 @@ class SearchWidget(QuranWidgetBase):
         )
         self.result_label.setText(formatted_text)
 
+        #Display english lexical and syntactic analysis output
+        try:
+        # Pass the query to the `skuld` function
+            skuld_output, errors = skuld(query)  
+            formatted_skuld_output = f"""
+            <h3>Lexical and Syntactic Analysis</h3>
+            <p>{skuld_output.replace('\n', '<br>')}</p>
+            """
+            if errors:
+                error_output = f"<h4>Errors:</h4><p>{'<br>'.join(errors)}</p>"
+                # Append both the analysis and errors to the result label
+                self.result_label.setText(self.result_label.text() + formatted_skuld_output + error_output)
+            else:
+                # Append only the analysis output
+                self.result_label.setText(self.result_label.text() + formatted_skuld_output)
+        except Exception as e:
+            self.show_error(f"Error in lexical/syntactic analysis: {e}")
+        
         # Display lexical and syntactic analysis output
         output = settings.lex_state["output"]  # From lexical function
         syntax_output = settings.syn_state["output"]  # From syntax_lines function

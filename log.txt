@@ -1296,3 +1296,171 @@ Translation : even though you ˹O Prophet˺ are subject to abuse in this city
 -------------------------------------
 parser result:
 وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+20/12/2024 22:32:18 - starting app
+
+20/12/2024 22:32:46 - Starting app
+
+21/12/2024 00:09:25 - starting app
+
+21/12/2024 00:09:49 - Starting app
+
+21/12/2024 00:13:32 - Starting app
+
+21/12/2024 00:13:32 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+21/12/2024 00:13:32 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+21/12/2024 00:16:21 - Starting app
+
+21/12/2024 00:16:21 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Mercful' at line 1 col 58 !
+
+21/12/2024 00:16:21 - Starting syntactic and semantic analysis...
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Mercful' at line 1 col 58 !
+
+Syntax error: Unexpected end of file
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+21/12/2024 00:19:06 - starting app
+
+21/12/2024 00:19:31 - Starting app
+
+21/12/2024 00:20:32 - starting app
+
+21/12/2024 00:21:01 - Starting app
+
+21/12/2024 00:41:42 - starting app
+
+21/12/2024 00:42:10 - Starting app
+
+21/12/2024 00:43:20 - starting app
+
+21/12/2024 00:43:50 - Starting app
+
+21/12/2024 00:47:00 - starting app
+
+21/12/2024 00:47:29 - Starting app
+
+21/12/2024 00:48:55 - starting app
+
+21/12/2024 00:49:23 - Starting app
+
+21/12/2024 00:50:15 - starting app
+
+21/12/2024 00:50:41 - Starting app
+
+21/12/2024 00:52:58 - starting app
+
+21/12/2024 00:53:26 - Starting app
+
+21/12/2024 01:05:45 - starting app
+
+21/12/2024 01:06:12 - Starting app
+
+21/12/2024 01:08:01 - starting app
+
+21/12/2024 01:08:32 - Starting app
+
+21/12/2024 01:09:06 - starting app
+
+21/12/2024 01:09:41 - Starting app
+
+21/12/2024 01:11:54 - starting app
+
+21/12/2024 01:12:50 - Starting app
+
+21/12/2024 01:15:02 - starting app
+
+21/12/2024 01:15:50 - Starting app
+
+21/12/2024 01:19:27 - starting app
+
+21/12/2024 01:20:05 - Starting app
+
+21/12/2024 01:36:39 - starting app
+
+21/12/2024 01:37:32 - Starting app
+
+21/12/2024 01:39:32 - starting app
+
+21/12/2024 01:40:05 - Starting app
+
+21/12/2024 01:48:46 - starting app
+
+21/12/2024 01:49:21 - Starting app
+
+21/12/2024 01:53:48 - starting app
+
+21/12/2024 01:54:25 - Starting app
+
+21/12/2024 01:55:13 - starting app
+
+21/12/2024 01:55:58 - Starting app

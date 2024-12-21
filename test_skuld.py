@@ -9884,12 +9884,13 @@ t_interjection_2 = r'[tT]{1}[aA]{1}'
 #t_ignore = ' \t'
 
 
+error_messages = []
 
 def t_error(t):
     match = re.match(r'\S+', t.value)
     if match:
         word = match.group(0)
-        print(f"Unrecognized word: {word}")
+        error_messages.append(f"Unrecognized word: {word}")
         t.lexer.skip(len(word))
     else:
         t.lexer.skip(1)
@@ -22252,30 +22253,37 @@ def p_aya(p):
     translated_words = translate_aya(matched_words)
     
     print(f"Matched Ayat: {matched_words}")
-    print(f"Translated Ayat: {translated_words}")
+    
 
 def p_error(p):
     if p:
-        print(f"Syntax error at '{p.value}'")
+        error_messages.append(f"Syntax error at '{p.value}'")
     else:
-        print("Syntax error at end of input")
+        error_messages.append("Syntax error at end of input")
 
 parser = yacc.yacc()
 
 print("Enter Quranic phrases to check. Type 'q' and press Enter to quit.")
 
-# while True:
-#     data = input("Enter Quranic aya : ").strip()
+def skuld(inp):
+    data = inp.strip()
+    
+    # Reset the error messages for each call to 'skuld'
+    error_messages.clear()
 
-#     if data.lower() == 'q':
-#         print("3adama laho ajrak.")
-#         break
-#     lexer.input(data)
-#     skuld_string = 'Token : '
-#     print('\n')
-#     for token in lexer:
-#         skuld_string += ''.join(re.findall(r'[a-zA-Z ]', token.type)) + " "
-#         #print(token.type,end=' ')
-#     print(skuld_string.strip())
-#     lexer.input(data)
-#     parser.parse(data)
+    lexer.input(data)
+    skuld_string = 'Token : '
+    
+    # Process the lexical analysis
+    for token in lexer:
+        skuld_string += ''.join(re.findall(r'[a-zA-Z ]', token.type)) + " "
+
+    # Perform the parsing and capture errors
+    try:
+        lexer.input(data)
+        parser.parse(data)
+    except Exception as e:
+        error_messages.append(f"Syntax error at '{data}'")
+
+    # Return both the lexical output and captured errors
+    return skuld_string.strip(), error_messages
