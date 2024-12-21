@@ -170,7 +170,7 @@ class QuranWidgetBase(QWidget):
         scaled_pixmap = pixmap.scaled(200, 200, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         self.background_label.setPixmap(scaled_pixmap)
 
-    def format_verse_display(self, chapter, verse, include_tafsir=False,api_results=None,vf=None):
+    def format_verse_display(self, chapter, verse, include_tafsir=False, api_results=None, vf=None, skuld_output=None, similar_verses=None):
         """Format verse display with HTML"""
         formatted_text = f"""
         <div style='margin: 10px;'>
@@ -201,6 +201,25 @@ class QuranWidgetBase(QWidget):
                     <p><b>Similarity Score:</b> {result['similarity_score']:.2f}</p>
                 </div>
                 """
+        if skuld_output:
+            formatted_text += f"""
+            <hr>
+            <h3>Lexical and Syntactic Analysis (Skuld):</h3>
+            <p>{skuld_output.replace('\n', '<br>')}</p>
+            """
+            if "Error" in skuld_output and similar_verses:
+                formatted_text += f"""
+                <hr>
+                <h3>Similar Verses (Error in Skuld Analysis):</h3>
+                <ul>
+                """
+                for similar in similar_verses:
+                    formatted_text += f"""
+                    <li>Surah: {similar['surah_name']} (No. {similar['surah_number']}), 
+                    Verse {similar['verse_number']}: {similar['verse_text']} (Similarity: {similar['similarity_score']:.2f})</li>
+                    """
+                formatted_text += "</ul>"
+
         formatted_text += "</div>"
         return formatted_text
 

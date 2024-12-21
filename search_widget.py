@@ -13,6 +13,8 @@ from logger import logevent
 from test_skuld import skuld
 
 
+from typing import Optional, Dict, List
+import logging
 
 class SearchWidget(QuranWidgetBase):
     def __init__(self):
@@ -41,46 +43,23 @@ class SearchWidget(QuranWidgetBase):
         self.layout.addWidget(self.scroll_area)
         self.layout.addWidget(self.background_label, 0, Qt.AlignCenter)
 
-        # Set size constraints
-        self.setMinimumWidth(500)
-        self.setMinimumHeight(600)
-
         
+        # Set up logging
+        self.logger = logging.getLogger(__name__)
+        
+        # Initialize state
+        
+        self.setup_connections()
+
+    
     def reset_states(self):
         settings.lex_state = {"output": ""}
         settings.syn_state = {"output": ""}
 
 
-        
-    def reset_states(self):
-        settings.lex_state = {"output": ""}
-        settings.syn_state = {"output": ""}
-
-
-    def setup_layouts(self):
-        """Set up the widget layouts"""
-        # Create main layout if it doesn't exist
-        if not hasattr(self, 'layout'):
-            self.layout = QVBoxLayout()
-            self.setLayout(self.layout)
-
-        # Add widgets to the main layout
-        self.layout.insertWidget(0, self.input_field)
-        self.layout.insertWidget(1, self.check_button)
-        
-        # Add existing layouts if they exist
-        if hasattr(self, 'nav_layout'):
-            self.layout.addLayout(self.nav_layout)
-        if hasattr(self, 'audio_layout'):
-            self.layout.addLayout(self.audio_layout)
-        if hasattr(self, 'scroll_area'):
-            self.layout.addWidget(self.scroll_area)
-        if hasattr(self, 'background_label'):
-            self.layout.addWidget(self.background_label, 0, Qt.AlignCenter)
-
+    
     def setup_connections(self):
         """Set up signal/slot connections"""
-        self.check_button.clicked.connect(self.check_verse)
         self.input_field.textChanged.connect(self.on_input_changed)
 
     def on_input_changed(self, text: str):
@@ -89,67 +68,86 @@ class SearchWidget(QuranWidgetBase):
 
     def show_error(self, message: str, title: str = "Error"):
         """Display error message using QMessageBox"""
-        # self.logger.error(message)
+        self.logger.error(message)
         QMessageBox.warning(self, title, message)
 
     def check_verse(self):
         """Check the entered verse against the Quran database"""
         entered_verse = self.input_field.text().strip()
         selected_language = self.language_selector.currentText()
+        
+        # Clear previous results
         self.result_label.clear()
         self.reset_states()
+
+        # Disable the button while processing to prevent multiple clicks
+        self.check_button.setEnabled(False)
+        
+        if not entered_verse:
+            self.show_error("Please enter a verse to search")
+            self.check_button.setEnabled(True)  # Re-enable the button after error
+            return
+
         if not self.load_quran_data():
             self.show_error("Failed to load Quran data")
+            self.check_button.setEnabled(True)  # Re-enable the button after error
             return
 
         try:
             # Find the verse based on the selected language
             if selected_language == "English":
-                skuld_output, errors = skuld(entered_verse)
-                if errors:
-                # If there are errors, display them in the terminal
-                    print('\n'.join(errors))
+                try:
+                    skuld_output, errors = skuld(entered_verse)  
+                    formatted_text = self.format_verse_display(
+                        chapter=self.current_chapter,
+                        verse=self.current_verse,
+                        include_tafsir=True,
+                        api_results=None,
+                        vf=None,
+                        skuld_output=skuld_output  
+                    )
+                    self.result_label.setText(formatted_text)
                     
+                    self.find_similar_verses(entered_verse)
+                        
+                    
+                except Exception as e:
+                    self.show_error(f"Error in lexical/syntactic analysis: {e}")
+                
+
                 for chapter in self.quran_data:
-                    for verse in chapter["verses"]:                        
-                            # Match the English translation
+                    for verse in chapter["verses"]:
+                        # Match the English translastion
                         if verse["translation"].strip().lower() == entered_verse.lower():
-                            self.vf=translate_aya(entered_verse)
+                            self.vf = translate_aya(entered_verse)
                             self.current_chapter = chapter
                             self.current_verse = verse
                             self.display_verse()
-                            
+                            self.check_button.setEnabled(True)  # Re-enable after processing
                             return
-                        else:
-                            # self.result_label.setText("Verse not found.")
-                            self.play_button.setEnabled(False)
-                            self.prev_button.setEnabled(False)
-                            self.next_button.setEnabled(False)
+                # If no match is found
+                
+                self.check_button.setEnabled(True)
+
             elif selected_language == "Arabic":
                 results = analyzeee(entered_verse)
                 self.display_analysis_results(results)
+                self.check_button.setEnabled(True)  # Re-enable after processing
                 return
-                # for chapter in self.quran_data:
-                #     for verse in chapter["verses"]:                        
-                #             # Match the English translation
-                #         if verse["text"].strip().lower() == entered_verse.lower():
-                #             self.vf=translate_aya(entered_verse)
-                #             self.current_chapter = chapter
-                #             self.current_verse = verse
-                #             self.display_verse()
-                #             return
-            return
-
-                        # If no match is found
-            self.result_label.setText("Verse not found.")
-            self.play_button.setEnabled(False)
-            self.prev_button.setEnabled(False)
-            self.next_button.setEnabled(False)
 
         except Exception as e:
             self.show_error(f"Error during analysis: {e}")
-            self.play_button.setEnabled(False)
-    
+            self.check_button.setEnabled(True)  # Re-enable after error
+            # Handle cases where there's no exact match or use ML model
+            if self.find_exact_match(entered_verse):
+                return
+            self.find_similar_verses(entered_verse)
+            
+        except Exception as e:
+            self.logger.exception("Error during verse search")
+            self.show_error(f"An error occurred while searching: {str(e)}")
+            self.check_button.setEnabled(True)  # Re-enable after error
+
     def display_analysis_results(self, results):
         """Display the results in the UI"""
         if "error" in results:
@@ -167,7 +165,33 @@ class SearchWidget(QuranWidgetBase):
             # For example:
             # self.result_label.setText(f"{lexical_output}\n\n{syntactic_output}\n\n{semantic_output}\n\n-- Arabic Analysis --")
 
-    def display_matches(self, results):
+    def find_exact_match(self, entered_verse: str) -> bool:
+        """Find exact match for the entered verse"""
+        for chapter in self.quran_data:
+            for verse in chapter["verses"]:
+                if verse["translation"].strip().lower() == entered_verse.lower():
+                    self.current_chapter = chapter
+                    self.current_verse = verse
+                    self.display_verse()
+                    return True
+        return False
+
+    def find_similar_verses(self, entered_verse: str):
+        """Use ML model to find similar verses"""
+        try:
+            matcher = QuranVerseMatcher('quran_ar_eng.json')
+            results = matcher.find_verse_match(entered_verse)
+            
+            if results['matches']:
+                self.display_matches(results)
+            else:
+                self.show_error("No matching verses found", "Search Results")
+                
+        except Exception as e:
+            self.logger.exception("Error in ML matching")
+            raise Exception(f"Error in verse matching: {str(e)}")
+
+    def display_matches(self, results: Dict):
         """Display the matching verses found"""
         matches_text = "Similar verses found:\n\n"
         for match in results['matches']:
@@ -181,7 +205,7 @@ class SearchWidget(QuranWidgetBase):
         self.result_label.setText(matches_text)
         self.play_button.setEnabled(True)
 
-    def fetch_api_results(self, query: str):
+    def fetch_api_results(self, query: str) -> List:
         """Fetch results from the API"""
         try:
             response = requests.post(
@@ -192,7 +216,7 @@ class SearchWidget(QuranWidgetBase):
             response.raise_for_status()
             return response.json().get("results", [])
         except requests.exceptions.RequestException as e:
-            # self.logger.error(f"API request failed: {e}")
+            self.logger.error(f"API request failed: {e}")
             self.show_error(f"Failed to connect to the API: {str(e)}")
             return []
 
@@ -203,42 +227,43 @@ class SearchWidget(QuranWidgetBase):
 
         # Fetch API results
         api_results = self.fetch_api_results(self.current_verse['translation'])
+        skuld_output = None
+        similar_verses = None
 
-        # Format and display the verse
+        try:
+            # Try Skuld analysis
+            skuld_output, errors = skuld(self.current_verse['translation'])
+        except Exception as e:
+            # Capture Skuld errors and find similar verses
+            skuld_output = f"Error in Skuld analysis: {str(e)}"
+            similar_verses = self.find_similar_verses(self.current_verse['translation'])
+
+        # Format and display the verse with all relevant information
         formatted_text = self.format_verse_display(
-            self.current_chapter, 
-            self.current_verse, 
+            chapter=self.current_chapter, 
+            verse=self.current_verse, 
             include_tafsir=True, 
             api_results=api_results,
-            vf=self.vf
+            vf=self.vf,
+            skuld_output=skuld_output,
+            similar_verses=similar_verses
         )
         self.result_label.setText(formatted_text)
 
-        #Display english lexical and syntactic analysis output
-        try:
-        # Pass the query to the `skuld` function
-            skuld_output, errors = skuld(query)  
-            formatted_skuld_output = f"""
-            <h3>Lexical and Syntactic Analysis</h3>
-            <p>{skuld_output.replace('\n', '<br>')}</p>
-            """
-            if errors:
-                error_output = f"<h4>Errors:</h4><p>{'<br>'.join(errors)}</p>"
-                # Append both the analysis and errors to the result label
-                self.result_label.setText(self.result_label.text() + formatted_skuld_output + error_output)
-            else:
-                # Append only the analysis output
-                self.result_label.setText(self.result_label.text() + formatted_skuld_output)
-        except Exception as e:
-            self.show_error(f"Error in lexical/syntactic analysis: {e}")
-        
-        # Display lexical and syntactic analysis output
-        output = settings.lex_state["output"]  # From lexical function
-        syntax_output = settings.syn_state["output"]  # From syntax_lines function
+        # Display lexical and syntactic analysis output if available
+        output = settings.lex_state.get("output", "")  # From lexical function
+        syntax_output = settings.syn_state.get("output", "")  # From syntax_lines function
         if output or syntax_output:
-            self.result_label.setText(formatted_text + "\n\n" + output + "\n" + syntax_output)
+            self.result_label.setText(formatted_text + "<br><br>" + output + "<br>" + syntax_output)
 
         # Enable audio controls
+        self.play_button.setEnabled(True)
+
+        # Update UI state
+        self.update_ui_state()
+
+    def update_ui_state(self):
+        """Update UI elements based on current state"""
         self.play_button.setEnabled(True)
         
         # Update navigation buttons

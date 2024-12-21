@@ -22268,22 +22268,17 @@ print("Enter Quranic phrases to check. Type 'q' and press Enter to quit.")
 def skuld(inp):
     data = inp.strip()
     
-    # Reset the error messages for each call to 'skuld'
     error_messages.clear()
 
     lexer.input(data)
     skuld_string = 'Token : '
     
-    # Process the lexical analysis
     for token in lexer:
         skuld_string += ''.join(re.findall(r'[a-zA-Z ]', token.type)) + " "
 
-    # Perform the parsing and capture errors
     try:
         lexer.input(data)
         parser.parse(data)
     except Exception as e:
         error_messages.append(f"Syntax error at '{data}'")
-
-    # Return both the lexical output and captured errors
     return skuld_string.strip(), error_messages
