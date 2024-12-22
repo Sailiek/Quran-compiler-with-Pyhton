@@ -11,6 +11,8 @@ import settings
 from interface import analyze_input
 from logger import logevent
 from test_skuld import skuld
+from googletrans import Translator
+
 
 
 from typing import Optional, Dict, List
@@ -161,6 +163,7 @@ class SearchWidget(QuranWidgetBase):
             self.show_error("Failed to load Quran data")
             self.check_button.setEnabled(True)  # Re-enable the button after error
             return
+        translator = Translator()
 
         try:
             # Find the verse based on the selected language
@@ -199,6 +202,7 @@ class SearchWidget(QuranWidgetBase):
                         # Match the English translastion
                         if verse["translation"].strip().lower() == entered_verse.lower():
                             self.vf = translate_aya(entered_verse)
+                            self.es=translator.translate(entered_verse, dest='es').text
                             self.current_chapter = chapter
                             self.current_verse = verse
                             self.display_verse()
@@ -217,6 +221,7 @@ class SearchWidget(QuranWidgetBase):
                         # Match the English translastion
                         if verse["text"].strip().lower() == entered_verse.lower():
                             self.vf = translate_aya(verse["translation"])
+                            self.es=translator.translate(verse["translation"], dest='es').text
                             self.current_chapter = chapter
                             self.current_verse = verse
                             self.display_verse()
@@ -339,6 +344,7 @@ class SearchWidget(QuranWidgetBase):
             include_tafsir=True, 
             api_results=api_results,
             vf=self.vf,
+            es=self.es,
             skuld_output=skuld_output,
             similar_verses=similar_verses
         )

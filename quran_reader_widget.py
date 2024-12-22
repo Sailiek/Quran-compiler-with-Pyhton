@@ -4,6 +4,8 @@ from PyQt5.QtCore import Qt, QStringListModel
 from PyQt5.QtGui import QKeyEvent
 from quran_widgets_common import QuranWidgetBase
 from chapter_suggestions import ChapterSuggestionModel
+from test_skuld import translate_aya
+from googletrans import Translator
 
 class SuggestionLineEdit(QLineEdit):
     def __init__(self, suggestion_model, *args, **kwargs):
@@ -253,9 +255,16 @@ class QuranReaderWidget(QuranWidgetBase):
         """Display the current verse"""
         if not self.current_chapter or not self.current_verse:
             return
-            
+        self.vf= translate_aya(self.current_verse['translation'])
+        translator = Translator()
+        self.es=translator.translate(self.current_verse['translation'], dest='es').text 
         # Format and display the verse
-        formatted_text = self.format_verse_display(self.current_chapter, self.current_verse, include_tafsir=True)
+        formatted_text = self.format_verse_display(chapter=self.current_chapter, 
+            verse=self.current_verse, 
+            include_tafsir=True, 
+            vf=self.vf,
+            es=self.es
+            )
         self.result_label.setText(formatted_text)
         
         # Enable audio controls

@@ -243,7 +243,7 @@ class QuranWidgetBase(QWidget):
             }
         """)
 
-    def format_verse_display(self, chapter, verse, include_tafsir=False, api_results=None, vf=None, skuld_output=None, similar_verses=None):
+    def format_verse_display(self, chapter, verse, include_tafsir=False, api_results=None, vf=None,es=None, skuld_output=None, similar_verses=None):
         """Format verse display with HTML"""
         formatted_text = f"""
         <div style='margin: 10px;'>
@@ -257,6 +257,7 @@ class QuranWidgetBase(QWidget):
             <p><b>Arabic Text:</b><br>{verse['text']}</p>
             <p><b>Translation:</b><br>{verse['translation']}</p>
             <p><b>Traduction:</b><br>{vf}</p>
+            <p><b>Espagnol:</b><br>{es}</p>
         """
         if include_tafsir:
             formatted_text += f"""
