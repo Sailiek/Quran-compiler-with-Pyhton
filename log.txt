@@ -1804,3 +1804,656 @@ Illegal token 'Meem' at line 1 col 9 !
 21/12/2024 23:41:53 - starting app
 
 21/12/2024 23:42:51 - Starting app
+
+22/12/2024 01:50:43 - starting app
+
+22/12/2024 01:51:40 - Starting app
+
+22/12/2024 01:54:06 - starting app
+
+22/12/2024 01:54:42 - Starting app
+
+22/12/2024 01:55:12 - Starting app
+
+22/12/2024 01:55:12 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |PREP    |بِ       
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 01:55:12 - Starting syntactic and semantic analysis...
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+22/12/2024 01:58:34 - starting app
+
+22/12/2024 01:59:25 - Starting app
+
+22/12/2024 01:59:34 - Starting app
+
+22/12/2024 01:59:34 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |PREP    |بِ       
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 01:59:34 - Starting syntactic and semantic analysis...
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+22/12/2024 02:01:04 - starting app
+
+22/12/2024 02:02:17 - Starting app
+
+22/12/2024 02:04:37 - starting app
+
+22/12/2024 02:05:23 - Starting app
+
+22/12/2024 02:05:42 - starting app
+
+22/12/2024 02:06:29 - Starting app
+
+22/12/2024 02:07:19 - Starting app
+
+22/12/2024 02:07:19 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |PREP    |بِ       
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 02:07:19 - Starting syntactic and semantic analysis...
+Illegal token 'سۡمِ' at line 1 col 2 !
+Did you mean: مِنَ?
+Illegal token 'ٱللَّهِ' at line 1 col 7 !
+Did you mean: لَّ?
+Illegal token 'ٱلرَّحۡمَٰنِ' at line 1 col 15 !
+Illegal token 'ٱلرَّحِيمِ' at line 1 col 28 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Especially' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 37 !
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'words' at line 1 col 32 !
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+Illegal token 'In' at line 1 col 0 !
+Illegal token 'the' at line 1 col 3 !
+Illegal token 'name' at line 1 col 7 !
+Illegal token 'of' at line 1 col 12 !
+Illegal token 'Allah' at line 1 col 15 !
+Illegal token 'the' at line 1 col 21 !
+Illegal token 'Entirely' at line 1 col 25 !
+Illegal token 'Merciful' at line 1 col 34 !
+Illegal token 'the' at line 1 col 43 !
+Illegal token 'Especially' at line 1 col 47 !
+Illegal token 'Merciful' at line 1 col 58 !
+
+22/12/2024 02:14:53 - starting app
+
+22/12/2024 02:15:18 - Starting app
+
+22/12/2024 02:17:45 - starting app
+
+22/12/2024 02:18:18 - Starting app
+
+22/12/2024 02:20:44 - starting app
+
+22/12/2024 02:21:29 - Starting app
+
+22/12/2024 02:24:22 - starting app
+
+22/12/2024 02:25:18 - Starting app
+
+22/12/2024 02:26:16 - starting app
+
+22/12/2024 02:27:06 - Starting app
+
+22/12/2024 02:28:46 - Starting app
+
+22/12/2024 02:28:46 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 02:28:46 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+22/12/2024 02:29:00 - Starting app
+
+22/12/2024 02:29:00 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 02:29:00 - Starting syntactic and semantic analysis...
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+
+22/12/2024 02:29:10 - Starting app
+
+22/12/2024 02:29:10 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 02:29:10 - Starting syntactic and semantic analysis...
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+
+22/12/2024 02:41:44 - starting app
+
+22/12/2024 02:42:12 - Starting app
+
+22/12/2024 02:42:45 - Starting app
+
+22/12/2024 02:42:45 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 02:42:45 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+22/12/2024 02:42:52 - Starting app
+
+22/12/2024 02:42:52 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+Illegal token 'هَا' at line 1 col 15 !
+Did you mean: هَذَا?
+|1     |19   |DEF_N   |الْبَلَدِ
+|1     |29   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 02:42:52 - Starting syntactic and semantic analysis...
+Illegal token 'هَا' at line 1 col 15 !
+Did you mean: هَذَا?
+Preposition phrase -> بِ الْبَلَدِ
+
+Syntax error: Unexpected DIVIDER(1) on line 1
+
+22/12/2024 02:43:09 - Starting app
+
+22/12/2024 02:43:09 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+22/12/2024 02:43:09 - Starting syntactic and semantic analysis...
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+Syntax error: Unexpected end of file
+
+22/12/2024 02:43:13 - Starting app
+
+22/12/2024 02:43:13 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+22/12/2024 02:43:13 - Starting syntactic and semantic analysis...
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+Syntax error: Unexpected end of file
+
+22/12/2024 02:43:14 - Starting app
+
+22/12/2024 02:43:14 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+22/12/2024 02:43:14 - Starting syntactic and semantic analysis...
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+Syntax error: Unexpected end of file
+
+22/12/2024 02:43:15 - Starting app
+
+22/12/2024 02:43:15 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+22/12/2024 02:43:15 - Starting syntactic and semantic analysis...
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+Syntax error: Unexpected end of file
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Espeally' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+
+22/12/2024 02:43:49 - Starting app
+
+22/12/2024 02:43:49 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 02:43:49 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+22/12/2024 02:43:55 - Starting app
+
+22/12/2024 02:43:55 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+|1     |29   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 02:43:55 - Starting syntactic and semantic analysis...
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+Preposition phrase -> بِ هَذَا
+
+Syntax error: Unexpected DIVIDER(1) on line 1
+Illegal token 'The' at line 1 col 0 !
+Illegal token 'Entirely' at line 1 col 4 !
+Illegal token 'Merciful' at line 1 col 13 !
+Illegal token 'the' at line 1 col 22 !
+Illegal token 'Especlly' at line 1 col 26 !
+Illegal token 'Merciful' at line 1 col 35 !
+
+22/12/2024 02:57:15 - starting app
+
+22/12/2024 02:58:04 - Starting app
+
+22/12/2024 02:59:39 - Starting app
+
+22/12/2024 02:59:39 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 02:59:39 - Starting syntactic and semantic analysis...
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+
+22/12/2024 02:59:52 - Starting app
+
+22/12/2024 02:59:52 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+22/12/2024 02:59:52 - Starting syntactic and semantic analysis...
+Illegal token 'ٱلۡحَمۡدُ' at line 1 col 0 !
+Illegal token 'لِلَّهِ' at line 1 col 10 !
+Did you mean: لَّ?
+Illegal token 'رَبِّ' at line 1 col 18 !
+Did you mean: بِ?
+Illegal token 'ٱلۡعَٰلَمِينَ' at line 1 col 24 !
+Did you mean: الَّذِينَ?
+
+Syntax error: Unexpected end of file
+Illegal token 'praise' at line 1 col 0 !
+Illegal token 'is' at line 1 col 7 !
+Illegal token 'to' at line 1 col 11 !
+Illegal token 'Allah' at line 1 col 14 !
+Illegal token 'Lord' at line 1 col 20 !
+Illegal token 'of' at line 1 col 25 !
+Illegal token 'the' at line 1 col 28 !
+Illegal token 'worlds' at line 1 col 32 !
+
+22/12/2024 03:00:28 - Starting app
+
+22/12/2024 03:00:28 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 03:00:28 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+22/12/2024 03:00:37 - Starting app
+
+22/12/2024 03:00:37 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+|1     |29   |DIVIDER |1        
+-------------------------------
+
+22/12/2024 03:00:37 - Starting syntactic and semantic analysis...
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+Preposition phrase -> بِ هَذَا
+
+Syntax error: Unexpected DIVIDER(1) on line 1

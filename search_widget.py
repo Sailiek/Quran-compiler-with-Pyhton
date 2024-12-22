@@ -212,6 +212,16 @@ class SearchWidget(QuranWidgetBase):
                 results = analyzeee(entered_verse)
                 self.display_analysis_results(results)
                 self.check_button.setEnabled(True)  # Re-enable after processing
+                for chapter in self.quran_data:
+                    for verse in chapter["verses"]:
+                        # Match the English translastion
+                        if verse["text"].strip().lower() == entered_verse.lower():
+                            self.vf = translate_aya(verse["translation"])
+                            self.current_chapter = chapter
+                            self.current_verse = verse
+                            self.display_verse()
+                            self.check_button.setEnabled(True)  # Re-enable after processing
+                            return
                 return
 
         except Exception as e:
