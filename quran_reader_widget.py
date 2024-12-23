@@ -209,7 +209,6 @@ class QuranReaderWidget(QuranWidgetBase):
         
         if not chapter:
             self.show_error("Chapter not found")
-            self.show_loading(False)
             return
             
         # Find verse
@@ -236,8 +235,7 @@ class QuranReaderWidget(QuranWidgetBase):
                     break
         
         if not verse:
-            self.show_error(f"Verse not found in chapter {chapter['name']}")
-            self.show_loading(False)
+            self.show_error("verse not found")
             return
         
         # Store current chapter and verse
