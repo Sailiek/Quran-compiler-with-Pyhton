@@ -7,6 +7,7 @@ from PyQt5.QtGui import QPixmap, QPalette, QBrush, QColor, QFont, QIcon
 from search_widget import SearchWidget
 from chatbot_widget import ChatbotWidget
 from quran_reader_widget import QuranReaderWidget
+from voice_recognition_widget import VoiceRecognitionWidget
 
 
 class OpeningWindow(QWidget):
@@ -80,11 +81,13 @@ class MainWindow(QMainWindow):
         self.quran_reader = QuranReaderWidget()
         self.search_widget = SearchWidget()
         self.chatbot_widget = ChatbotWidget()
+        self.voice_widget = VoiceRecognitionWidget()
 
         # Ajouter les widgets au QStackedWidget
         self.central_widget.addWidget(self.quran_reader)
         self.central_widget.addWidget(self.search_widget)
         self.central_widget.addWidget(self.chatbot_widget)
+        self.central_widget.addWidget(self.voice_widget)
 
         # Initialiser la mise en page de l'UI
         self.init_ui()
@@ -121,10 +124,15 @@ class MainWindow(QMainWindow):
         self.style_button(chatbot_button)
         chatbot_button.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.chatbot_widget))
 
+        voice_button = QPushButton("Voice Recognition")
+        self.style_button(voice_button)
+        voice_button.clicked.connect(lambda: self.central_widget.setCurrentWidget(self.voice_widget))
+
         # Ajouter les boutons au layout de la barre latérale
         nav_layout.addWidget(read_button)
         nav_layout.addWidget(search_button)
         nav_layout.addWidget(chatbot_button)
+        nav_layout.addWidget(voice_button)
         nav_layout.addStretch()  # Ajouter un espace pour pousser les boutons vers le haut
 
         # Créer le widget pour la barre latérale

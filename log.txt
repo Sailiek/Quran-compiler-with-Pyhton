@@ -2659,3 +2659,73 @@ parser result:
 24/12/2024 09:10:47 - starting app
 
 24/12/2024 09:11:30 - Starting app
+
+24/12/2024 10:12:11 - starting app
+
+24/12/2024 10:13:30 - Starting app
+
+24/12/2024 10:17:26 - starting app
+
+24/12/2024 10:18:24 - Starting app
+
+24/12/2024 10:20:15 - starting app
+
+24/12/2024 10:20:53 - Starting app
+
+24/12/2024 10:24:52 - starting app
+
+24/12/2024 10:25:20 - Starting app
+
+24/12/2024 10:39:36 - starting app
+
+24/12/2024 10:40:08 - Starting app
+
+24/12/2024 10:44:53 - Starting app
+
+24/12/2024 10:44:53 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+|1     |21   |DEF_N   |الْبَلَدِ
+|1     |31   |DIVIDER |1        
+-------------------------------
+
+24/12/2024 10:44:53 - Starting syntactic and semantic analysis...
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verbal sentence -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Verse -> لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Semantic check for:لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+=> Semantically correct, verse 1:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ
+Translation : I do swear by this city ˹of Mecca˺
+
+-------------------------------------
+parser result:
+لَا أُقْسِمُ بِ هَذَا الْبَلَدِ 1
+
+24/12/2024 10:45:19 - Starting app
+
+24/12/2024 10:45:19 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |NEG     |لَا      
+|1     |4    |VERB    |أُقْسِمُ 
+|1     |13   |PREP    |بِ       
+|1     |15   |DEM     |هَذَا    
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+|1     |29   |DIVIDER |1        
+-------------------------------
+
+24/12/2024 10:45:19 - Starting syntactic and semantic analysis...
+Illegal token 'الْبَدِ' at line 1 col 21 !
+Did you mean: الْبَلَدِ?
+Preposition phrase -> بِ هَذَا
+
+Syntax error: Unexpected DIVIDER(1) on line 1
