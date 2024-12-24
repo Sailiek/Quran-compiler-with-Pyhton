@@ -191,7 +191,7 @@ class QuranReaderWidget(QuranWidgetBase):
             chapter_id = int(chapter_query)
             if chapter_id <= 0:
                 self.show_error("Invalid chapter number: must be greater than 0")
-                self.show_loading(False)
+              #  self.show_loading(False)
                 return
             for ch in self.quran_data:
                 if ch["id"] == chapter_id:
@@ -218,11 +218,11 @@ class QuranReaderWidget(QuranWidgetBase):
             verse_num = int(verse_query)
             if verse_num <= 0:
                 self.show_error("Invalid verse number: must be greater than 0")
-                self.show_loading(False)
+               # self.show_loading(False)
                 return
             if verse_num > chapter["total_verses"]:
                 self.show_error(f"Chapter {chapter['name']} ({chapter['translation']}) only has {chapter['total_verses']} verses")
-                self.show_loading(False)
+                #self.show_loading(False)
                 return
             verse = chapter["verses"][verse_num - 1]
         except ValueError:

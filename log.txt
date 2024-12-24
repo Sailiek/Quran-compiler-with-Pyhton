@@ -2582,3 +2582,80 @@ Illegal token 'worlds' at line 1 col 32 !
 23/12/2024 23:55:10 - starting app
 
 23/12/2024 23:55:39 - Starting app
+
+24/12/2024 08:07:14 - starting app
+
+24/12/2024 08:07:40 - Starting app
+
+24/12/2024 08:07:54 - Starting app
+
+24/12/2024 08:07:54 - Starting Lexical analysis...
+
+| LINE | COL |  TYPE  | TOKEN
+-------------------------------
+|1     |0    |CONJ    |وَ       
+|1     |2    |PRON    |أَنْتَ   
+|1     |9    |UNDEF_N |حِلٌّ    
+|1     |15   |PREP    |بِ       
+|1     |17   |DEM     |هَذَا    
+|1     |23   |DEF_N   |الْبَلَدِ
+|1     |33   |DIVIDER |2        
+-------------------------------
+
+24/12/2024 08:07:54 - Starting syntactic and semantic analysis...
+Nominal sentence -> أَنْتَ حِلٌّ
+Preposition phrase -> بِ هَذَا
+Object -> الْبَلَدِ
+Verse -> وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Semantic check for:وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+=> Semantically correct, verse 2:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ
+Translation : even though you ˹O Prophet˺ are subject to abuse in this city
+
+-------------------------------------
+parser result:
+وَ أَنْتَ حِلٌّ بِ هَذَا الْبَلَدِ 2
+
+24/12/2024 08:10:12 - starting app
+
+24/12/2024 08:10:34 - Starting app
+
+24/12/2024 08:38:15 - starting app
+
+24/12/2024 08:38:23 - Starting app
+
+24/12/2024 08:38:54 - starting app
+
+24/12/2024 08:39:25 - Starting app
+
+24/12/2024 08:39:30 - starting app
+
+24/12/2024 08:39:59 - Starting app
+
+24/12/2024 08:41:17 - starting app
+
+24/12/2024 08:41:53 - Starting app
+
+24/12/2024 08:42:26 - starting app
+
+24/12/2024 08:42:58 - Starting app
+
+24/12/2024 08:44:15 - starting app
+
+24/12/2024 08:44:44 - Starting app
+
+24/12/2024 08:46:14 - starting app
+
+24/12/2024 08:46:47 - Starting app
+
+24/12/2024 08:47:16 - starting app
+
+24/12/2024 08:47:46 - Starting app
+
+24/12/2024 09:09:15 - starting app
+
+24/12/2024 09:09:48 - Starting app
+
+24/12/2024 09:10:47 - starting app
+
+24/12/2024 09:11:30 - Starting app
